@@ -4,16 +4,19 @@ import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 
+export const dynamic = "force-dynamic";
+
 type Params = {
   category: string;
   project: string;
 };
 
-
-export async function generateMetadata({ params }: { params: Params }) {
-  const local_params = await params;
-  const category = await local_params.category;
-  const projectSlug = await local_params.project;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { category, project: projectSlug } = await params;
 
   const project = projects.find(
     (proj) =>
@@ -32,10 +35,12 @@ export async function generateMetadata({ params }: { params: Params }) {
   };
 }
 
-export default async function ProjectPage({ params }: { params: Params }) {
-  const local_params = await params;
-  const category = await local_params.category;
-  const projectSlug = await local_params.project;
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { category, project: projectSlug } = await params;
 
   const project = projects.find(
     (proj) =>

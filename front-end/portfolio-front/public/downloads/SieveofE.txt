@@ -1,0 +1,5 @@
+unsigned long allNum[size];
+		for(unsigned long k=2; k<=size;k++){
+			allNum[k-2]=k;}
+		cout<<"start:"<< allNum[0]<< " end: "<<allNum[size-2];
+	

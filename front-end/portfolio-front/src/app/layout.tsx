@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import "@/app/globals.css";
 import SearchBar from "@/components/SearchBox";
+import Link from "next/link";
+import Image from "next/image";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
@@ -22,9 +25,15 @@ export default function RootLayout({
         {/* Header */}
         <div className={styles.headerWrapper}>
           <div className={styles.header}>
-            <a href="/#home" style={{ paddingTop: "10px" }}>
-              <img src="/dev_note_trans.png" alt="Site Logo" className={styles.logo} />
-            </a>
+            <Link href="/#home" style={{ paddingTop: "10px" }}>
+              <Image
+                src="/dev_note_trans.png"
+                alt="Site Logo"
+                className={styles.logo}
+                width={200}
+                height={80}
+              />
+            </Link>
             <SearchBar />
           </div>
         </div>
@@ -33,10 +42,10 @@ export default function RootLayout({
         <div className={styles.content}>
           <div className={styles.sidebar}>
             <div className={styles.sidebarContent}>
-              <a href="/#home" className={styles.menuItem}>Home</a>
-              <a href="/#Languages" className={styles.menuItem}>Languages</a>
-              <a href="/#Command-Line" className={styles.menuItem}>Command-Line</a>
-              <a href="/#Graphics" className={styles.menuItem}>Graphics</a>
+              <Link href="/#home" className={styles.menuItem}>Home</Link>
+              <Link href="/#Languages" className={styles.menuItem}>Languages</Link>
+              <Link href="/#Command-Line" className={styles.menuItem}>Command-Line</Link>
+              <Link href="/#Graphics" className={styles.menuItem}>Graphics</Link>
             </div>
           </div>
 

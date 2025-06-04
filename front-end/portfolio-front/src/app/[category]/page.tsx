@@ -9,18 +9,24 @@ type Params = {
 };
 
 // Page metadata generation
-export async function generateMetadata({ params }: { params: Params }) {
-  const local_params = await params;
-  const cat = await local_params.category;
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { category } = await params;
   return {
-    title: `${categoryNameMap[cat] ?? cat} Projects`,
+    title: `${categoryNameMap[category] ?? category} Projects`,
   };
 }
 
 // Page component
-export default async function CategoryPage({ params }: { params: Params }) {
-  const local_params = await params;
-  const category = await local_params.category;
+export default async function CategoryPage({
+  params,
+}: {
+  params: Promise<Params>;
+}) {
+  const { category } = await params;
 
   const filteredProjects = projects.filter(
     (proj) =>
@@ -42,7 +48,10 @@ export default async function CategoryPage({ params }: { params: Params }) {
         <div className={styles.rowItems}>
           {filteredProjects.map((proj) => (
             <div key={proj.name} className={styles.card}>
-              <Link href={`/${category}/${proj.slug}`} className ={styles.card}>
+              <Link
+                href={`/${category}/${proj.slug}`}
+                className={styles.card}
+              >
                 <div>
                   <Image
                     src={proj.image}
