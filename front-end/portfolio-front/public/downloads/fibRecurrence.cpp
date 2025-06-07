@@ -23,4 +23,5 @@ int fibN(int n, int nMinus1){
 	counter++;
 	return fibN(fibSum,n);
 }
+return -1;
 }

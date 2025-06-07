@@ -16,7 +16,7 @@ def menu():
     Gfile.close()
     both=boys+girls
     while(choice!="no"):
-        choice=input("What gender do you want to search through? ( 'boy', 'girl', 'both')\n 'no' to end\n ") 
+        choice=input("What sex do you want to search through? ( 'boy', 'girl', 'both')\n 'no' to end\n ") 
         if(choice!="no"): name=input("What's the name? ")
         if(choice=='boy'): searcher(boys, name)
         if(choice=='girl'):searcher(girls, name)

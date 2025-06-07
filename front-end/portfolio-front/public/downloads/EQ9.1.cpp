@@ -15,6 +15,7 @@ while(abc!=1000){
 		if(abc==1000) {
 			sum=a*b*c;
 			cout<<"a:"<<a<<"|b:"<<b<<"|c:"<<c<<"   "<<abc<<" should be 1000"<<"product:"<<sum;
+			return sum;
 		}
 	
 	}
