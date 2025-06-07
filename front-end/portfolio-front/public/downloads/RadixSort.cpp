@@ -16,7 +16,7 @@ void RadSort(int list[],int passCount);
 int main(){
 	int passer, numb[MAX];
 	char choice='a';
-	while(choice!='Q'&&choice!='q'){
+	while(choice!='Q'&&choice!= 'q'){
 	cout<<"Please input six 4-digit numbers:\n";
 	for(int i=0;i<MAX;i++){
 		cin>>numb[i];

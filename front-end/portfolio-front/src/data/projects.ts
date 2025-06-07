@@ -41,7 +41,7 @@ export const projects:Project[] =[
         "slug":"TicTacToe-cpp",
         "image": "/cpp_bw.png",
         "file": "/downloads/TicTacToe.cpp",
-        "categories":["Cpp","Command-Line","TicTacToe"],
+        "categories":["Cpp","Command-Line",'tic-tac-toe'],
         "description":"This program is an interactive game of TicTacToe written when I was in highschool circa 2020. This verison has a better output than \'ttt.cpp\'"
 
     },
@@ -51,7 +51,7 @@ export const projects:Project[] =[
         "slug":"ttt-cpp",
         "image": "/cpp_bw.png",
         "file": "/downloads/ttt.cpp",
-        "categories":["Cpp","Command-Line","TicTacToe"],
+        "categories":["Cpp","Command-Line",'tic-tac-toe'],
         "description":"This program is an interactive game of TicTacToe written when I was in highschool circa 2020. This verison has a better internal style than \'TicTacToe.cpp\'"
 
     },
