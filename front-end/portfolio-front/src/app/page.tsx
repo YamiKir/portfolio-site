@@ -19,7 +19,7 @@ export default function Home() {
   ];
 
   const graphic_prog = [
-    { name: "Mana", slug: "mana", image: "/ruby_bw.png" },
+    { name: "OpenGL", slug: "opengl", image: "/opengl_bw.png" },
   ];
 
   return (
