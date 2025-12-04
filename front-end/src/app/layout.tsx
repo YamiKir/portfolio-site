@@ -43,6 +43,7 @@ export default function RootLayout({
           <div className={styles.sidebar}>
             <div className={styles.sidebarContent}>
               <Link href="/#home" className={styles.menuItem}>Home</Link>
+              <Link href="/#feats" className={styles.menuItem}>Featured Programs</Link>
               <Link href="/#Languages" className={styles.menuItem}>Languages</Link>
               <Link href="/#Command-Line" className={styles.menuItem}>Command-Line</Link>
               <Link href="/#Graphics" className={styles.menuItem}>Graphics</Link>

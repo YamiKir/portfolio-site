@@ -5,21 +5,30 @@ import React from "react";
 import ScrollToHash from "./ScrollToHash";
 import PathnameLogger from "./PathnameLogger";
 
+
+
 export default function Home() {
+   let introMsg =<>Koby Ramsey<br /> LSU Software Engineer</>;
+   const feats =[
+      {name: "Lotus Leaf", slug:"lotus-leaf", image:"/lotus-bw.png"},
+      {name: "PokeBot", slug:"pb", image:"/poked-bw.png"},
+      {name: "SongGuesser", slug:"sg", image:"/song-guessr-bw.png"}
+      
+   ];
   const languages = [
     { name: "C++", slug: "cpp", image: "/cpp_bw.png" },
     { name: "Python", slug: "python", image: "/python_bw.png" },
     { name: "Java", slug: "java", image: "/java_bw.png" },
     { name: "JavaScript", slug: "javascript", image: "/javascript_bw.png" },
-    { name: "Ruby", slug: "ruby", image: "/ruby_bw.png" },
+    
   ];
 
   const cmd_prog = [
-    { name: "Tic Tac Toe", slug: "tic-tac-toe", image: "/ruby_bw.png" },
+    
   ];
 
   const graphic_prog = [
-    { name: "OpenGL", slug: "opengl", image: "/opengl_bw.png" },
+   
   ];
 
   return (
@@ -30,12 +39,15 @@ export default function Home() {
       <ScrollToHash />
       <PathnameLogger />
       <main id="home" className={styles.main}>
-        <CategoryRow title="Languages" items={languages} />
+        <h1 id ="intro-self" className={styles.introduction}>
+            {introMsg}
+         
+         </h1> 
+         
+          <CategoryRow title="Featured Projects" items={feats} />
+          <CategoryRow title="Languages" items={languages} />
         <CategoryRow title="Command-Line" items={cmd_prog} />
         <CategoryRow title="Graphics" items={graphic_prog} />
-        {[...Array(10)].map((_, i) => (
-          <CategoryRow key={i} title="Junk" items={graphic_prog} />
-        ))}
       </main>
     </>
   );

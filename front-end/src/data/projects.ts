@@ -9,6 +9,37 @@ export type Project = {
 
 export const projects:Project[] =[
 
+
+   {
+        "name": "Lotus Leaf",
+        "slug":"ll",
+        "image": "/lotus-bw.png",
+        "file": "/downloads/lotusleaf-main.zip",
+        "categories":["Python","Command-Line",'feats',"lotus-leaf"],
+        "description":"A Peer to Peer File Sharing solution"
+
+    },
+    {
+        "name": "PokeBot",
+        "slug":"pbdc",
+        "image": "/poked-bw.png",
+        "file": "/downloads/The-People-Project-main.zip",
+        "categories":["Java","GUI",'feats',"pb"],
+        "description":"A Discord Bot that allows channel memembers to collect, level, and battle Pokemon"
+
+    },
+    {
+        "name": "SongGuessr",
+        "slug":"sgweb",
+        "image": "/song-guessr-bw.png",
+        "file": "/downloads/Songguessr-main.zip",
+        "categories":["Python","JavaScript","Web",'feats',"Music","sg"],
+        "description":"A site that challenges players ability to decipher the origin of a random song from around the world via Spotify previews."
+
+    },
+
+
+
     {
         "name": "hi.cc",
         "slug":"hi-cc",
@@ -244,15 +275,7 @@ export const projects:Project[] =[
         "description":"A car simulation with a simple gui menu"
 
     },
-    {
-        "name": "carz.zip",
-        "slug":"carz-zip",
-        "image": "/cpp_bw.png",
-        "file": "/downloads/Carz.zip",
-        "categories":["Python","Graphics"],
-        "description":"A car simulation with a simple gui menu"
-
-    },
+    
      {
         "name": "misc_python.zip",
         "slug":"miscpython-zip",

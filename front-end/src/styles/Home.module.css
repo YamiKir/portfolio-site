@@ -1,3 +1,29 @@
+@font-face {
+  font-family: "Google Sans Code";
+  src: url("./fonts/Google_Sans_Code/GoogleSansCode-VariableFont_wght.ttf")
+       format("truetype-variations");
+  font-weight: 100 900;
+  font-style: normal;
+
+}
+@font-face {
+
+  font-family: "Google Sans Code Italics";
+  src: url("./fonts/Google_Sans_Code/GoogleSansCode-Italic-VariableFont_wght.ttf")
+       format("truetype-variations");
+  font-style: italic;
+  font-weight: 100 900;
+
+}
+@font-face {
+
+  font-family: "Death Note Font";
+  src: url("./fonts/death-note/Death\ Note.ttf")
+       format("truetype-variations");
+  font-style: normal;
+  font-weight: 100 900;
+
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -5,6 +31,18 @@
   background-color: #111;
   color: white;
   font-family: 'Roboto', sans-serif;
+}
+
+.introduction{
+
+  margin-top: 200px;
+  font-size:500%;
+  margin-bottom: 100px;
+
+  font-family:"Death Note Font", monospace;
+  text-align: center;
+  
+
 }
 
 .headerWrapper {
@@ -95,14 +133,21 @@
 
 /* Category layout */
 .main {
-  display: flex;
+   display: flex;
   flex-direction: column;
+  align-items: center; /* centers CategoryRow blocks */
   gap: 40px;
   overflow: auto;
 }
 
 .row {
+ 
   width: 100%;
+  max-width: 1200px; /* This controls Netflix-like content width */
+  margin: 0 auto;    /* Centers the entire row */
+  padding: 0 20px;   /* Optional: Netflix-style side padding */
+
+
 }
 
 .rowTitle {
@@ -116,6 +161,7 @@
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   overflow-x: auto;
   padding-bottom: 10px;
+   justify-content: center;
 }
 
 .card {

@@ -8,4 +8,8 @@ export const categoryNameMap: Record<string, string> = {
   mana: 'Mana',
   graphics: 'Graphics',
   'command-line': 'Command-Line',
+  sg: 'Song Guessr',
+  pb: "Poke Bot",
+  'lotus-leaf': "Lotus Leaf"
+
 }
