@@ -8,7 +8,7 @@ import PathnameLogger from "./PathnameLogger";
 
 
 export default function Home() {
-   let introMsg =<>Koby Ramsey<br /> LSU Software Engineer</>;
+   const introMsg =<>Koby Ramsey<br /> LSU Software Engineer</>;
    const feats =[
       {name: "Lotus Leaf", slug:"lotus-leaf", image:"/lotus-bw.png"},
       {name: "PokeBot", slug:"pb", image:"/poked-bw.png"},
@@ -24,11 +24,12 @@ export default function Home() {
   ];
 
   const cmd_prog = [
+  { name: "C++", slug: "cpp", image: "/cpp_bw.png" },
     
   ];
 
   const graphic_prog = [
-   
+   { name: "JavaScript", slug: "javascript", image: "/javascript_bw.png" },
   ];
 
   return (
