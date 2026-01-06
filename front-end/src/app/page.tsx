@@ -4,6 +4,7 @@ import CategoryRow from "../components/CategoryRow";
 import React from "react";
 import ScrollToHash from "./ScrollToHash";
 import PathnameLogger from "./PathnameLogger";
+import Link from "next/link";
 
 
 
@@ -42,9 +43,12 @@ export default function Home() {
       <main id="home" className={styles.main}>
         <h1 id ="intro-self" className={styles.introduction}>
             {introMsg}
-         
+            <br></br>
+             <Link href="/about" className={styles.aboutInline}>
+               About Me →
+            </Link>
          </h1> 
-         
+            
           <CategoryRow title="Featured Projects" items={feats} />
           <CategoryRow title="Languages" items={languages} />
         <CategoryRow title="Command-Line" items={cmd_prog} />
