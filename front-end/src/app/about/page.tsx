@@ -17,7 +17,7 @@ Welcome to DevNote, a repository of some of my software projects!`;
       I took an introductory programming course with Professor Peters at LSMSA in C++ and the subsequent Data Structures course.
        I also gained exposure to Java and Python during my time there. Aside: I'm grateful for my educators and my peers at LSMSA.
         After leaving LSMSA, I started an undergraduate degree at Louisiana State University at Baton Rouge in Software Engineering.
-         After taking a breadth of courses, from Dante's Divine Comedy (a now lasting passion) to Computer Networks and AI and Linear Differential Equations, I earned my Software Engineering degree in May 2025. Now I'm looking to become a member of a team in order to gain mentorship and improve my skills, develop products that have an impact, and work on projects that requires passionate people.`;
+         After taking a breadth of courses, from Dante's Divine Comedy (a now lasting passion) to Computer Networks and AI to Linear Differential Equations, I earned my Software Engineering degree in May 2025. Now I'm looking to become a member of a team in order to gain mentorship and improve my skills, develop products that have an impact, and work on projects that requires passionate people.`;
 
   return (
     <div>
