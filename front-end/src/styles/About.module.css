@@ -1,0 +1,107 @@
+/* Page container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* Intro heading */
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  white-space: pre-line;
+  text-align: center;
+
+  /* spacing below intro */
+  margin-bottom: 3rem;
+}
+
+/* Image section */
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+
+  /* spacing below image */
+  margin-bottom: 3.5rem;
+}
+
+.avatar {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Typewriter text blocks */
+.sectionText {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  white-space: pre-line;
+
+  /* spacing between typewriter sections */
+  margin-bottom: 3.5rem;
+}
+
+/* Optional subtle divider (if you want one later) */
+.divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.08);
+  margin: 3rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .imageWrapper {
+    margin-bottom: 3rem;
+  }
+
+  .sectionText {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .buttonRow {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.buttonPrimary,
+.buttonSecondary {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Email button */
+.buttonPrimary {
+  background-color: #111;
+  color: #fff;
+}
+
+.buttonPrimary:hover {
+  background-color: #000;
+}
+
+/* Resume button */
+.buttonSecondary {
+  border: 1px solid #ccc;
+  color: #111;
+  background-color: transparent;
+}
+
+.buttonSecondary:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+}
