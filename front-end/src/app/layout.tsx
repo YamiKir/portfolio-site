@@ -48,6 +48,7 @@ export default function RootLayout({
               <Link href="/#Command-Line" className={styles.menuItem}>Command-Line</Link>
               <Link href="/#Graphics" className={styles.menuItem}>Graphics</Link>
               <Link href = "/about" className={styles.menuItem}>About</Link>
+              <Link href = "/downloads/ramsey_resume.pdf" className={styles.menuItem}>Resume</Link>
             </div>
           </div>
 
