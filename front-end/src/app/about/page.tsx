@@ -54,7 +54,7 @@ const contactText = [
 
       <Typewriter
         text={aboutText}
-        speed={17}
+        speed={45}
         start={step === 0}
         onComplete={() => setStep(1)}
         className={styles.sectionText}
@@ -63,7 +63,7 @@ const contactText = [
 
       <Typewriter
         text={hobbiesText}
-        speed={17}
+        speed={45}
         start={step === 1}
         onComplete={() => setStep(2)}
         className={styles.sectionText}
@@ -71,7 +71,7 @@ const contactText = [
       />
       <Typewriter
         text={contactText}
-        speed={17}
+        speed={45}
         start={step === 2}
         onComplete={() => setStep(3)}
         className={styles.sectionText}
