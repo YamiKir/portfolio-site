@@ -11,7 +11,7 @@ export default function Home() {
     <>
       Koby Ramsey
       <br />
-      LSU Software Engineer
+      Software Engineer
     </>
   );
 

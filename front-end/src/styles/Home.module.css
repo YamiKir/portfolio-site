@@ -140,7 +140,13 @@
 
 .aboutInline {
   font-size: 0.9em;
-  opacity: 0.75;
+  color: #8ab4f8;
+  opacity: 1;
+  transition: color 0.2s ease;
+}
+
+.aboutInline:hover {
+  color: #aecbfa;
 }
 
 
