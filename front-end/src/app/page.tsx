@@ -24,17 +24,17 @@ export default function Home() {
     {
       name: "Eddi",
       slug: "eddi",
-      image: "/cpp-bw.png",
+      image: "/text_cursor.png",
     },
     {
       name: "Chessor",
       slug: "chessor",
-      image: "/cpp-bw.png",
+      image: "/dark-knight.png",
     },
     {
       name: "Minesweeper (Flutter)",
       slug: "msweeps",
-      image: "/cpp-bw.png",
+      image: "/mines1024.png",
     },
     {
       name: "PokeBot",

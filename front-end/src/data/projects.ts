@@ -24,7 +24,7 @@ export const projects:Project[] =[
     {
         "name": "Eddi",
         "slug":"eddi",
-        "image": "/cpp-bw.png",
+        "image": "/text_cursor.png",
         "file": "",
         "github": "https://github.com/YamiKir/text_eddi",
         "categories":["Cpp","Command-Line",'feats',"eddi"],
@@ -33,7 +33,7 @@ export const projects:Project[] =[
     },{
         "name": "Chessor",
         "slug":"chessor",
-        "image": "/cpp-bw.png",
+        "image": "/dark-knight.png",
         "file": "",
         "github": "https://github.com/YamiKir/Chessor",
         "categories":["Cpp","Command-Line",'feats',"chessor"],
@@ -43,7 +43,7 @@ export const projects:Project[] =[
     {
         "name": "Minesweeper (Flutter)",
         "slug":"msweeps",
-        "image": "/cpp-bw.png",
+        "image": "/mines1024.png",
         "file": "",
         "github": "https://github.com/YamiKir/minesweeper",
         "categories":["Dart","Flutter",'feats',"msweeps"],
