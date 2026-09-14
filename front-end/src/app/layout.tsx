@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import "@/app/globals.css";
+import ScrollToTop from "./ScrollToTop";
 
 import SearchBar from "@/components/SearchBox";
 import Sidebar from "@/components/Sidebar";
@@ -34,6 +35,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${styles.container}`}
       >
+
+        <ScrollToTop/>
         {/* Header */}
         <header className={styles.headerWrapper}>
           <div className={styles.header}>

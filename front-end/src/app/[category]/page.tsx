@@ -44,7 +44,7 @@ export default async function CategoryPage({
   );
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles.pageEnter}`}>
       <h1>{categoryNameMap[category] ?? category} Projects</h1>
 
       {filteredProjects.length === 0 ? (

@@ -59,7 +59,7 @@ export default async function ProjectPage({
   if (!project) return notFound();
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles.pageEnter}`}>
       <h1>{project.name}</h1>
 
       <Image
