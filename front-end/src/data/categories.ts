@@ -10,6 +10,9 @@ export const categoryNameMap: Record<string, string> = {
   'command-line': 'Command-Line',
   sg: 'Song Guessr',
   pb: "Poke Bot",
-  'lotus-leaf': "Lotus Leaf"
+  'lotus-leaf': "Lotus Leaf",
+  eddi:"Eddi",
+  chessor:"Chessor",
+  msweeps:"Minesweeper (Flutter)"
 
 }

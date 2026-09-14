@@ -2,7 +2,8 @@ export type Project = {
   name: string;
   slug: string;
   image: string;
-  file: string;
+  github?: string;
+  file?: string;
   categories: string[];
   description: string;
 };
@@ -15,14 +16,45 @@ export const projects:Project[] =[
         "slug":"ll",
         "image": "/lotus-bw.png",
         "file": "/downloads/lotusleaf-main.zip",
+        "github": "https://github.com/YamiKir/lotusleaf",
         "categories":["Python","Command-Line",'feats',"lotus-leaf"],
         "description":"A Peer to Peer File Sharing solution"
+
+    },
+    {
+        "name": "Eddi",
+        "slug":"eddi",
+        "image": "/cpp-bw.png",
+        "file": "",
+        "github": "https://github.com/YamiKir/text_eddi",
+        "categories":["Cpp","Command-Line",'feats',"eddi"],
+        "description":"A terminal text editior built using NotCurses."
+
+    },{
+        "name": "Chessor",
+        "slug":"chessor",
+        "image": "/cpp-bw.png",
+        "file": "",
+        "github": "https://github.com/YamiKir/Chessor",
+        "categories":["Cpp","Command-Line",'feats',"chessor"],
+        "description":"An in-development chess engine"
+
+    },
+    {
+        "name": "Minesweeper (Flutter)",
+        "slug":"msweeps",
+        "image": "/cpp-bw.png",
+        "file": "",
+        "github": "https://github.com/YamiKir/minesweeper",
+        "categories":["Dart","Flutter",'feats',"msweeps"],
+        "description":"An in-development version of Minesweeper built using Flutter"
 
     },
     {
         "name": "PokeBot",
         "slug":"pbdc",
         "image": "/poked-bw.png",
+        "github":"https://github.com/Hayden-Dup/The-People-Project",
         "file": "/downloads/The-People-Project-main.zip",
         "categories":["Java","GUI",'feats',"pb"],
         "description":"A Discord Bot that allows channel memembers to collect, level, and battle Pokemon"
@@ -32,6 +64,7 @@ export const projects:Project[] =[
         "name": "SongGuessr",
         "slug":"sgweb",
         "image": "/song-guessr-bw.png",
+        "github": "https://github.com/BrandonDeB/SongGuessr",
         "file": "/downloads/Songguessr-main.zip",
         "categories":["Python","JavaScript","Web",'feats',"Music","sg"],
         "description":"A site that challenges players ability to decipher the origin of a random song from around the world via Spotify previews."

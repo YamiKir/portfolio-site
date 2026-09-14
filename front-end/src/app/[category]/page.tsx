@@ -8,6 +8,10 @@ type Params = {
   category: string;
 };
 
+function getGithubDownloadUrl(githubUrl: string, branch = "main") {
+  return `${githubUrl.replace(/\/$/, "")}/archive/refs/heads/${branch}.zip`;
+}
+
 // Page metadata generation
 export async function generateMetadata({
   params,
@@ -15,6 +19,7 @@ export async function generateMetadata({
   params: Promise<Params>;
 }) {
   const { category } = await params;
+
   return {
     title: `${categoryNameMap[category] ?? category} Projects`,
   };
@@ -63,9 +68,41 @@ export default async function CategoryPage({
                   <div className={styles.cardLabel}>{proj.name}</div>
                 </div>
               </Link>
-              <a href={proj.file} download>
-                <button style={{ marginTop: "8px" }}>Download</button>
-              </a>
+
+              {proj.github ? (
+                <div>
+                  <a
+                    href={proj.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button style={{ marginTop: "8px" }}>
+                      GitHub
+                    </button>
+                  </a>
+
+                  <a
+                    href={getGithubDownloadUrl(proj.github)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <button
+                      style={{
+                        marginTop: "8px",
+                        marginLeft: "8px",
+                      }}
+                    >
+                      Download Source
+                    </button>
+                  </a>
+                </div>
+              ) : proj.file ? (
+                <a href={proj.file} download>
+                  <button style={{ marginTop: "8px" }}>
+                    Download
+                  </button>
+                </a>
+              ) : null}
             </div>
           ))}
         </div>

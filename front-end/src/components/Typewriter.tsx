@@ -13,7 +13,7 @@ type TypewriterProps = {
 
 export default function Typewriter({
   text,
-  speed = 15,
+  speed = 205,
   start = true,
   onComplete,
   className,

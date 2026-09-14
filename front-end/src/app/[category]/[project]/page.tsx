@@ -11,6 +11,10 @@ type Params = {
   project: string;
 };
 
+function getGithubDownloadUrl(githubUrl: string, branch = "main") {
+  return `${githubUrl.replace(/\/$/, "")}/archive/refs/heads/${branch}.zip`;
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -57,6 +61,7 @@ export default async function ProjectPage({
   return (
     <div className={styles.container}>
       <h1>{project.name}</h1>
+
       <Image
         src={project.image}
         alt={project.name}
@@ -64,10 +69,32 @@ export default async function ProjectPage({
         height={300}
         className={styles.cardImage}
       />
+
       <p>{project.description}</p>
-      <a href={project.file} download>
-        <button>Download</button>
-      </a>
+
+      {project.github ? (
+        <>
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>GitHub</button>
+          </a>
+
+          <a
+            href={getGithubDownloadUrl(project.github)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Download Source</button>
+          </a>
+        </>
+      ) : project.file ? (
+        <a href={project.file} download>
+          <button>Download</button>
+        </a>
+      ) : null}
     </div>
   );
 }
